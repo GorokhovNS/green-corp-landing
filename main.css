@@ -459,25 +459,20 @@ margin-right: 80px;
     }
     }
 
-/*.promo {
+.promo {
     display: flex;
-justify-content: center;
-align-items: center;
-} */
+} 
 
     .promo__image {
         width: 50%;
-        min-height: 627px;
-        float: left;
-            background-image: url('img/promo.jpg');
+                   background-image: url('img/promo.jpg');
     background-size: cover;
+    background-position: center;
     flex-shrink: 0;
 }
 
     .promo__right {
-        width: 43,5%;
-                margin-left: 50%;
-     background-color: #dd5f26;
+        background-color: #dd5f26;
 padding-top: 160px;
 padding-bottom: 160px;
 padding-left: 60px;
@@ -491,9 +486,19 @@ padding-right: 60px;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 26px;
     font-weight: 500;
     border-radius: 25px;
+}
+
+.card_promo p::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #ec6b29;
+   margin-right: 10px;
 }
 
 .card_right p {
@@ -501,15 +506,16 @@ padding-right: 60px;
 }
 
 .button_promo {
-        margin-left: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 720px) {
     .promo {
-        display: flex;
-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
     .promo__image {
+        width: 100px;
         height: 500px;
     }
 
@@ -521,45 +527,4 @@ padding-right: 10px;
     }
 }
     
-    /*.promo {
-        display: flex;
-        justify-content: center;
-    }
     
-    .promo_img {
-        width: 500px;
-    }
-
-    .promo__right {
-        background-color: #dd5f26;
-        padding-top: 160px;
-        padding-bottom: 160px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .card__promo {
-        background-color: #fff;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 20px;
-        height: 22px;
-        font-weight: 700;
-        border: none;
-        border-radius: 25px;
-    }
-
-    .card__promo p {
-        opacity: 0.8;
-    }
-
-    .arrowright {
-        margin-left: 5px;
-    }
-
-    .fa-circle-small {
-        color: #ec6b29;
-        margin-left: 10px;
-    }
